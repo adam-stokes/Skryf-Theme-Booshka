@@ -1,0 +1,3 @@
+% layout 'main';
+%= t 'h2' => $post->{topic}
+<%== $post->{html} %>

@@ -1,8 +1,25 @@
 package App::skryf::Theme::Booshka;
 
-use strict;
-use 5.008_005;
+use Mojo::Base 'Mojolicious::Plugin';
+use File::Basename 'dirname';
+use File::Spec::Functions 'catdir';
+
 our $VERSION = '0.01';
+
+has theme_name => 'Booshka';
+has theme_author => 'Adam Stokes';
+has theme_license => 'MIT';
+has theme_description => 'A simple base theme for Skryf.';
+
+sub register {
+    my ($self, $app, $config) = @_;
+    push @{$app->static->paths},
+      catdir(dirname(__FILE__), 'public');
+    push @{$app->renderer->paths},
+      catdir(dirname(__FILE__), 'templates');
+    push @{$app->renderer->classes}, __PACKAGE__;
+
+}
 
 1;
 __END__
