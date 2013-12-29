@@ -1,0 +1,3 @@
+% layout 'main';
+%= t 'h2' => "Welcome to your new Skryf application."
+

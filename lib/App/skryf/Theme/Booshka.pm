@@ -29,7 +29,7 @@ __END__
 
 =head1 NAME
 
-App::skryf::Theme::Booshka - Blah blah blah
+App::skryf::Theme::Booshka - Base theme for Skryf
 
 =head1 SYNOPSIS
 
@@ -37,7 +37,7 @@ App::skryf::Theme::Booshka - Blah blah blah
 
 =head1 DESCRIPTION
 
-App::skryf::Theme::Booshka is
+App::skryf::Theme::Booshka is a base theme for Skryf
 
 =head1 AUTHOR
 
