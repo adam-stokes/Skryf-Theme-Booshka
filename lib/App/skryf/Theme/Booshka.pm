@@ -4,7 +4,7 @@ use Mojo::Base 'Mojolicious::Plugin';
 use File::Basename 'dirname';
 use File::Spec::Functions 'catdir';
 
-our $VERSION = '0.01';
+# VERSION
 
 has theme_name => 'Booshka';
 has theme_author => 'Adam Stokes';
@@ -13,11 +13,12 @@ has theme_description => 'A simple base theme for Skryf.';
 
 sub register {
     my ($self, $app, $config) = @_;
-    push @{$app->static->paths},
-      catdir(dirname(__FILE__), 'public');
-    push @{$app->renderer->paths},
-      catdir(dirname(__FILE__), 'templates');
+    my $base = catdir(dirname(__FILE__), 'Booshka');
+    push @{$app->renderer->paths}, catdir($base, 'templates');
+    push @{$app->static->paths},   catdir($base, 'public');
+
     push @{$app->renderer->classes}, __PACKAGE__;
+    push @{$app->static->classes},   __PACKAGE__;
 
 }
 
