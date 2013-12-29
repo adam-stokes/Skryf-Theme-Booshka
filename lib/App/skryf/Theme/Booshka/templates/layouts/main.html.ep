@@ -9,7 +9,6 @@
       %= javascript '/javascripts/jquery-latest.min.js'
       %= javascript '/javascripts/highlight.pack.js'
       <%= analytics_inc 'UA-23169268-1' %>
-      <%= jquery_ajax_csrf_protection %>
   %= end
   %= t 'body' => begin
     %= t 'div', id => 'container' => begin
@@ -17,7 +16,7 @@
         %= t 'div', id => 'page-body' => begin
           <%= content %>
         %= end
-      %= include 'footer'
     %= end
+    %= include 'footer'
   %= end
 %= end
