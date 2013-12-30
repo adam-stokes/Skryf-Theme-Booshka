@@ -1,3 +1,5 @@
 % layout 'main';
-%= t 'h2' => "Welcome to your new Skryf application."
+%= t 'h1' => "Welcome to your new Skryf application."
+
+<p>This is the default template Booshka, you should create your own or customize this one.</p>
 
