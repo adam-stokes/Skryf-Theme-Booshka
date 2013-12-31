@@ -1,6 +1,6 @@
 %= t 'div', id => 'navbar' => begin
 <div class="links">
-  %= link_to 'Skryf::Admin' => url_for('admin_dashboard')
+  %= link_to 'Skryf::Admin' => url_for('admin_blog_dashboard')
   &infin;
   %= link_to 'View Site' => url_for(app->config->{landing_page})
 </div>

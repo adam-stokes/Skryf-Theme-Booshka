@@ -5,14 +5,12 @@
     % if (my $msg = flash 'message') {
     <b><%= $msg %></b>
     % }
-  %= form_for "/admin/blog/update", class => 'blog-form' => ( method => 'POST' ) => begin
+  %= form_for url_for("admin_blog_update"), class => 'blog-form' => ( method => 'POST' ) => begin
   %= hidden_field csrf_field
   %= hidden_field slug => $post->{slug}
-  %= text_field title', type => 'text', class => 'blog-form-control', value => $post->{title}
-  <div class="wmd-panel">
-    <div id='wmd-button-bar'></div>
-  %= text_area 'content' => $post->{content}, class => 'wmd-input', id => 'wmd-input'
-  </div>
+  %= text_field 'title', type => 'text', class => 'blog-form-control', value => $post->{title}
+  %= t 'br'
+  %= text_area 'content' => $post->{content}
   %= t 'br'
   %= text_field 'tags', type => 'text', class => 'blog-form-control', value => $post->{tags}
   %= t 'br'
