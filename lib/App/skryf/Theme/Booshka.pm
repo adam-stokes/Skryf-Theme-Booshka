@@ -10,6 +10,7 @@ has theme_name => 'Booshka';
 has theme_author => 'Adam Stokes';
 has theme_license => 'MIT';
 has theme_description => 'A simple base theme for Skryf.';
+has plugins_supported => ['Blog', 'Wiki', 'Admin', 'Search'];
 
 sub register {
     my ($self, $app, $config) = @_;
