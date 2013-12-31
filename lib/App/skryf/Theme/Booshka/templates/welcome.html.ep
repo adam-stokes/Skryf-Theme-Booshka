@@ -3,3 +3,5 @@
 
 <p>This is the default template Booshka, you should create your own or customize this one.</p>
 
+<p>Admin page location is <strong>/admin</strong>, you'll want to setup an account/password first.</p>
+
