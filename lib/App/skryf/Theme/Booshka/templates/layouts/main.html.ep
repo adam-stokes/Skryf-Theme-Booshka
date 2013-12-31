@@ -3,11 +3,9 @@
   %= t 'head' => begin
     <meta name="viewport" content="width=device-width" />
     %= t 'title' => config->{title}
-      %= stylesheet '/stylesheets/style.css'
+      %= stylesheet '/stylesheets/bundle.css'
       %= stylesheet 'http://fonts.googleapis.com/css?family=Cabin+Sketch:700|Ubuntu'
-      %= stylesheet '/stylesheets/tomorrow-night-bright.css'
-      %= javascript '/javascripts/jquery-latest.min.js'
-      %= javascript '/javascripts/highlight.pack.js'
+      %= javascript '/javascripts/app-min.js'
       <%= analytics_inc 'UA-23169268-1' %>
   %= end
   %= t 'body' => begin
