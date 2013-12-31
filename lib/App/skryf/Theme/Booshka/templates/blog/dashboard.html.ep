@@ -1,4 +1,4 @@
-% layout 'auth';
+% layout 'admin';
 <div class="post-body">
 %= t 'h2' => 'Posts'
 %= link_to "New Post" => url_for('admin_blog_new') => class => 'btn'
@@ -8,7 +8,7 @@
 <table border="0">
   <tbody>
   <tr>
-    <th>Topic</th>
+    <th>Title</th>
     <th>Created</th>
     <th>Public</th>
     <th>Action</th>
@@ -16,7 +16,7 @@
   % foreach (@{$postlist}) {
     <tr>
       <td>
-        <%= link_to $_->{topic} => url_for("admin_blog_edit", slug => $_->{slug}) %>
+        <%= link_to $_->{title} => url_for("admin_blog_edit", slug => $_->{slug}) %>
       </td>
       <td><%= $_->{created} %></td>
       <td>n/a</td>

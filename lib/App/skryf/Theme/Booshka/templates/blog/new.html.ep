@@ -1,9 +1,9 @@
-% layout 'auth';
+% layout 'admin';
 %= t 'div', class => 'post-body' => begin
   %= t 'h2' => 'New content'
 
-  %= form_for '/admin/post/new', class => 'blog-form' => ( method => 'POST' ) => begin
-  %= text_field 'topic', type => 'text', class => 'blog-form-control'
+  %= form_for '/admin/blog/new', class => 'blog-form' => ( method => 'POST' ) => begin
+  %= text_field 'title', type => 'text', class => 'blog-form-control'
   <div class="wmd-panel">
     <div id='wmd-button-bar'></div>
     %= text_area 'content', class => 'wmd-input', id => 'wmd-input'

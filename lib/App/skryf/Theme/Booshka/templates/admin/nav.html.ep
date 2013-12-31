@@ -2,7 +2,7 @@
 <div class="links">
   %= link_to 'Skryf::Admin' => url_for('admin_dashboard')
   &infin;
-  %= link_to 'View Site' => url_for('splashpage')
+  %= link_to 'View Site' => url_for(app->config->{landing_page})
 </div>
 %= end
 <div id="navbar-sub">
