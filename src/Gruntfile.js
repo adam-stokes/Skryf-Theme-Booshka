@@ -6,14 +6,14 @@ module.exports = function(grunt) {
         browserify: {
             js: {
                 files: {
-                    '../public/javascripts/app.js': ['js/app.js']
+                    '../share/public/javascripts/app.js': ['js/app.js']
                 }
             }
         },
         uglify: {
             build: {
                 files: {
-                    '../public/javascripts/app-min.js': ['../public/javascripts/app.js']
+                    '../share/public/javascripts/app-min.js': ['../public/javascripts/app.js']
                 }
             }
         },
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    '../public/stylesheets/bundle.css': 'css/style.styl'
+                    '../share/public/stylesheets/bundle.css': 'css/style.styl'
                 }
             }
         }

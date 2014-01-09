@@ -3,8 +3,9 @@ package App::skryf::Theme::Booshka;
 use Mojo::Base 'Mojolicious::Plugin';
 use File::Basename 'dirname';
 use File::Spec::Functions 'catdir';
+use File::ShareDir ':ALL';
 
-# VERSION
+our $VERSION = '';
 
 has theme_name => 'Booshka';
 has theme_author => 'Adam Stokes';
@@ -14,9 +15,9 @@ has plugins_supported => ['Blog', 'Wiki', 'Admin', 'Search'];
 
 sub register {
     my ($self, $app, $config) = @_;
-    my $base = catdir(dirname(__FILE__), 'Booshka');
-    push @{$app->renderer->paths}, catdir($base, 'templates');
-    push @{$app->static->paths},   catdir($base, 'public');
+
+    push @{$app->renderer->paths}, catdir(dist_dir('App::skryf::Theme::Booshka'), 'templates');
+    push @{$app->static->paths},   catdir(dist_dir('App::skryf::Theme::Booshka'), 'public');
 
     push @{$app->renderer->classes}, __PACKAGE__;
     push @{$app->static->classes},   __PACKAGE__;
