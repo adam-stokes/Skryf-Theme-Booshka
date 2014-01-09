@@ -16,8 +16,8 @@ has plugins_supported => sub { my $self =shift; ['Blog', 'Wiki', 'Admin', 'Searc
 sub register {
     my ($self, $app, $config) = @_;
 
-    push @{$app->renderer->paths}, catdir(module_dir('Appskryf::Theme::Booshka'), 'templates');
-    push @{$app->static->paths},   catdir(module_dir('App::skryf::Theme::Booshka'), 'public');
+    push @{$app->renderer->paths}, catdir(dist_dir('App-skryf-Theme-Booshka'), 'templates');
+    push @{$app->static->paths},   catdir(dist_dir('App-skryf-Theme-Booshka'), 'public');
 
     push @{$app->renderer->classes}, __PACKAGE__;
     push @{$app->static->classes},   __PACKAGE__;
