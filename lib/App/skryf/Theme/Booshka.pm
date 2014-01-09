@@ -5,13 +5,13 @@ use File::Basename 'dirname';
 use File::Spec::Functions 'catdir';
 use File::ShareDir ':ALL';
 
-our $VERSION = '';
+our $VERSION = '0.02';
 
 has theme_name => 'Booshka';
 has theme_author => 'Adam Stokes';
 has theme_license => 'MIT';
 has theme_description => 'A simple base theme for Skryf.';
-has plugins_supported => ['Blog', 'Wiki', 'Admin', 'Search'];
+has plugins_supported => sub { my $self =shift; ['Blog', 'Wiki', 'Admin', 'Search'] };
 
 sub register {
     my ($self, $app, $config) = @_;

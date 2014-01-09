@@ -1,6 +1,6 @@
 # NAME
 
-App::skryf::Theme::Booshka - Blah blah blah
+App::skryf::Theme::Booshka - Base theme for Skryf
 
 # SYNOPSIS
 
@@ -8,7 +8,7 @@ App::skryf::Theme::Booshka - Blah blah blah
 
 # DESCRIPTION
 
-App::skryf::Theme::Booshka is
+App::skryf::Theme::Booshka is a base theme for Skryf
 
 # AUTHOR
 
