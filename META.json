@@ -24,6 +24,12 @@
       ]
    },
    "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::Mojo" : "0",
+            "Test::More" : "0"
+         }
+      },
       "configure" : {
          "requires" : {
             "Module::Build::Tiny" : "0.030"
@@ -32,6 +38,18 @@
       "develop" : {
          "requires" : {
             "Test::Pod" : "1.41"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "File::ShareDir" : "0",
+            "Mojo::Base" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::Mojo" : "0",
+            "Test::More" : "0"
          }
       }
    },
