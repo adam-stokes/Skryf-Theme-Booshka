@@ -1,0 +1,3 @@
+% use DateTime::Format::RFC3339;
+% layout 'main';
+%= t 'h1' => 'Launchpad'
