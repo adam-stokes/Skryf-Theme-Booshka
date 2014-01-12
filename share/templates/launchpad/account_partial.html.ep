@@ -1,0 +1,9 @@
+<div id="launchpad-account-box">
+  <span class="box-title">Welcome</span>
+    <% if (app->is_connected) {
+      You are connected to the Launchpad.net service
+    <% } else {%>
+      Please authenticate with Launchpad.net to access your account resources.
+    <% } %>
+  </div>
+</div>

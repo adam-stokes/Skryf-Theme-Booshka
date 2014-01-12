@@ -1,3 +1,4 @@
 % use DateTime::Format::RFC3339;
 % layout 'main';
 %= t 'h1' => 'Launchpad'
+   %= include 'launchpad/account_partial'
