@@ -6,18 +6,34 @@ use File::Spec::Functions 'catdir';
 use File::ShareDir ':ALL';
 
 our $VERSION = '0.02';
-
-has theme_name => 'Booshka';
-has theme_author => 'Adam Stokes';
-has theme_license => 'Perl_5';
-has theme_description => 'A simple base theme for Skryf.';
-has plugins_supported => sub { my $self =shift; ['Blog', 'Admin', 'Search'] };
+$VERSION = eval $VERSION;
 
 sub register {
-    my ($self, $app, $config) = @_;
+    my ($self, $app) = @_;
+    ###########################################################################
+    # Theme Metadata
+    ###########################################################################
+    $app->helper(
+        theme => sub {
+            my $self = shift;
+            return {
+                'name'              => 'Booshka',
+                'author'            => 'Adam Stokes',
+                'license'           => 'Perl_5',
+                'description'       => 'The default Skryf theme.',
+                'plugins_supported' => ['Blog', 'Launchpad'],
+                'version'           => $VERSION,
+            };
+        }
+    );
 
-    push @{$app->renderer->paths}, catdir(dist_dir('Skryf-Theme-Booshka'), 'templates');
-    push @{$app->static->paths},   catdir(dist_dir('Skryf-Theme-Booshka'), 'public');
+    ###########################################################################
+    # Add templates/static files to the renderer/static paths namespaces
+    ###########################################################################
+    push @{$app->renderer->paths},
+      catdir(dist_dir('Skryf-Theme-Booshka'), 'templates');
+    push @{$app->static->paths},
+      catdir(dist_dir('Skryf-Theme-Booshka'), 'public');
 
     push @{$app->renderer->classes}, __PACKAGE__;
     push @{$app->static->classes},   __PACKAGE__;

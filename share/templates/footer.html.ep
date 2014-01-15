@@ -1,10 +1,11 @@
 %= t 'div', id => 'footer' => begin
   <%= link_to 'http://perl.org' => begin %><img src="/img/perl.png" height="15" width="80" alt="Perl Powered" /><% end %>
   &rarr;
-  <%= link_to "https://github.com/skryf/Skryf" => begin %>Skryf<% end %> <%= app->config->{version} %>
+  <%= link_to "https://github.com/skryf/Skryf" => begin %>Skryf<% end %> <%= app->config->{version} %> |
+  Theme: <%= link_to "https://github.com/skryf/Skryf-Theme-Booshka" => begin %><%= theme->{name} %><% end %> <%= theme->{version} %>
 
     %= t 'div', id => 'account' => begin
-     % if (my $auth = session 'user') {
+     % if (my $auth = session 'is_admin') {
       <b>You are currently logged in.</b>
      % }
     %= end

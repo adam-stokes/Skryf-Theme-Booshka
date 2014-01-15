@@ -1,6 +1,6 @@
 use strict;
 use Test::More;
-use App::skryf::Theme::Booshka;
+use Skryf::Theme::Booshka;
 
 # replace with the actual test
 ok 1;
