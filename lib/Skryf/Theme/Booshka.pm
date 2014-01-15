@@ -4,9 +4,10 @@ use Mojo::Base 'Mojolicious::Plugin';
 use File::Basename 'dirname';
 use File::Spec::Functions 'catdir';
 use File::ShareDir ':ALL';
+use version;
 
 our $VERSION = '0.03';
-$VERSION = eval $VERSION;
+$VERSION = version->parse($VERSION);
 
 sub register {
     my ($self, $app) = @_;

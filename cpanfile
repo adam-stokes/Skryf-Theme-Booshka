@@ -1,5 +1,8 @@
+requires 'File::Basename';
 requires 'File::ShareDir';
-requires 'Mojo::Base';
+requires 'File::Spec::Functions';
+requires 'Mojolicious';
+requires 'version';
 
 on test => sub {
   requires 'Test::More';
