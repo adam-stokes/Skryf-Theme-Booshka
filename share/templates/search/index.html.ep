@@ -1,4 +1,4 @@
-% layout 'main';
+% layout 'default';
 %= t 'div', class => 'search-body' => begin
   %= t 'h1' => "Search"
   % if (my $msg = flash 'message') {

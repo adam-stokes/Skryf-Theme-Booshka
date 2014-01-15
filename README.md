@@ -1,14 +1,14 @@
 # NAME
 
-App::skryf::Theme::Booshka - Base theme for Skryf
+Skryf::Theme::Booshka - Base theme for Skryf
 
 # SYNOPSIS
 
-    use App::skryf::Theme::Booshka;
+    use Skryf::Theme::Booshka;
 
 # DESCRIPTION
 
-App::skryf::Theme::Booshka is a base theme for Skryf
+Skryf::Theme::Booshka is a base theme for Skryf
 
 # AUTHOR
 
@@ -16,7 +16,7 @@ Adam Stokes <adamjs@cpan.org>
 
 # COPYRIGHT
 
-Copyright 2013- Adam Stokes
+Copyright 2013-2014 Adam Stokes
 
 # LICENSE
 

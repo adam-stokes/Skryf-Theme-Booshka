@@ -1,4 +1,4 @@
-package App::skryf::Theme::Booshka;
+package Skryf::Theme::Booshka;
 
 use Mojo::Base 'Mojolicious::Plugin';
 use File::Basename 'dirname';
@@ -9,15 +9,15 @@ our $VERSION = '0.02';
 
 has theme_name => 'Booshka';
 has theme_author => 'Adam Stokes';
-has theme_license => 'MIT';
+has theme_license => 'Perl_5';
 has theme_description => 'A simple base theme for Skryf.';
 has plugins_supported => sub { my $self =shift; ['Blog', 'Admin', 'Search'] };
 
 sub register {
     my ($self, $app, $config) = @_;
 
-    push @{$app->renderer->paths}, catdir(dist_dir('App-skryf-Theme-Booshka'), 'templates');
-    push @{$app->static->paths},   catdir(dist_dir('App-skryf-Theme-Booshka'), 'public');
+    push @{$app->renderer->paths}, catdir(dist_dir('Skryf-Theme-Booshka'), 'templates');
+    push @{$app->static->paths},   catdir(dist_dir('Skryf-Theme-Booshka'), 'public');
 
     push @{$app->renderer->classes}, __PACKAGE__;
     push @{$app->static->classes},   __PACKAGE__;
@@ -31,15 +31,15 @@ __END__
 
 =head1 NAME
 
-App::skryf::Theme::Booshka - Base theme for Skryf
+Skryf::Theme::Booshka - Base theme for Skryf
 
 =head1 SYNOPSIS
 
-  use App::skryf::Theme::Booshka;
+  use Skryf::Theme::Booshka;
 
 =head1 DESCRIPTION
 
-App::skryf::Theme::Booshka is a base theme for Skryf
+Skryf::Theme::Booshka is a base theme for Skryf
 
 =head1 AUTHOR
 
@@ -47,7 +47,7 @@ Adam Stokes E<lt>adamjs@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright 2013- Adam Stokes
+Copyright 2013-2014 Adam Stokes
 
 =head1 LICENSE
 

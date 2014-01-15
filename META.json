@@ -4,7 +4,7 @@
       "Adam Stokes <adamjs@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v1.0.4, Dist::Zilla version 5.008, CPAN::Meta::Converter version 2.133380",
+   "generated_by" : "Dist::Milla version v1.0.4, Dist::Zilla version 5.011, CPAN::Meta::Converter version 2.133380",
    "license" : [
       "perl_5"
    ],
@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "App-skryf-Theme-Booshka",
+   "name" : "Skryf-Theme-Booshka",
    "no_index" : {
       "directory" : [
          "t",
@@ -56,13 +56,13 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/skryf/App-skryf-Theme-Booshka/issues"
+         "web" : "https://github.com/skryf/Skryf-Theme-Booshka/issues"
       },
-      "homepage" : "https://github.com/skryf/App-skryf-Theme-Booshka",
+      "homepage" : "https://github.com/skryf/Skryf-Theme-Booshka",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/skryf/App-skryf-Theme-Booshka.git",
-         "web" : "https://github.com/skryf/App-skryf-Theme-Booshka"
+         "url" : "https://github.com/skryf/Skryf-Theme-Booshka.git",
+         "web" : "https://github.com/skryf/Skryf-Theme-Booshka"
       }
    },
    "version" : "0.02",
