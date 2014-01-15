@@ -5,7 +5,7 @@ use File::Basename 'dirname';
 use File::Spec::Functions 'catdir';
 use File::ShareDir ':ALL';
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 $VERSION = eval $VERSION;
 
 sub register {
