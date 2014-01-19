@@ -3,12 +3,13 @@
   %= t 'head' => begin
     <meta name="viewport" content="width=device-width" />
     %= t 'title' => config->{title}
-      %= stylesheet '/css/admin-bundle.css'
+      %= stylesheet '/stylesheets/admin.css'
       %= stylesheet 'http://fonts.googleapis.com/css?family=Cabin+Sketch:700|Ubuntu'
-      %= javascript '/js/admin-min.js'
+      %= javascript '/javascripts/admin-min.js'
   %= end
   %= t 'body' => begin
     %= t 'div', id => 'container' => begin
+    %= include 'admin/nav'
     %= t 'h1' => 'Admin'
         %= t 'div', id => 'page-body' => begin
           <%= content %>

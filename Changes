@@ -1,6 +1,7 @@
 Revision history for App-skryf-Theme-Booshka
 
 {{$NEXT}}
+	- Update admin style
 
 0.04  2014-01-14 20:49:41 EST
 	- Include version parsing

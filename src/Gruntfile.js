@@ -6,14 +6,16 @@ module.exports = function(grunt) {
         browserify: {
             js: {
                 files: {
-                    '../share/public/javascripts/app.js': ['js/app.js']
+                    '../share/public/javascripts/app.js': ['js/app.js'],
+                    '../share/public/javascripts/admin.js': ['js/admin.js']
                 }
             }
         },
         uglify: {
             build: {
                 files: {
-                    '../share/public/javascripts/app-min.js': ['../public/javascripts/app.js']
+                    '../share/public/javascripts/app-min.js': ['../public/javascripts/app.js'],
+                    '../share/public/javascripts/admin-min.js': ['../public/javascripts/admin.js']
                 }
             }
         },
@@ -24,7 +26,8 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    '../share/public/stylesheets/bundle.css': 'css/style.styl'
+                    '../share/public/stylesheets/bundle.css': 'css/style.styl',
+                    '../share/public/stylesheets/admin.css': 'css/admin.styl'
                 }
             }
         }
