@@ -1,1 +1,3 @@
-body{color:#000;background-color:#134b57;font-family:'Droid Sans Mono',sans-serif;font-size:1em;padding:0;margin:0}
+body{color:#000;background-color:#134b57;font-family:'Droid Sans',sans-serif;font-size:1em;padding:0;margin:0}
+#navbar .circle .blog{-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background-color:#81a489}
+#navbar .circle .launchpad{-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background-color:#f1d8b5}

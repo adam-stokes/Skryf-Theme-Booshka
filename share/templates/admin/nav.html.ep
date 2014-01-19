@@ -1,11 +1,12 @@
 %= t 'div', id => 'navbar' => begin
-<div class="links">
   %= t 'ul'
-  %= t 'li', class => 'button-small' => begin
-    %= link_to 'Skryf::Admin' => url_for('admin_blog_dashboard')
+  %= t 'li', class => 'circle dashboard' => begin
+    %= link_to 'Skryf::Admin' => url_for('admindashboard')
   %= end
-  %= t 'li', class => 'button-small' => begin
+  %= t 'li', class => 'circle home' => begin
     %= link_to 'View Site' => url_for(app->config->{landing_page})
   %= end
-</div>
+  %= t 'li', class => 'circle blog' => begin
+    %= link_to 'Blog' => url_for('admin_blog_dashboard')
+  %= end
 %= end

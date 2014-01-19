@@ -7,8 +7,24 @@ color5 = #C04D31
 body
   color #000
   background-color color1
-  font-family 'Droid Sans Mono', sans-serif
+  font-family 'Droid Sans', sans-serif
   font-size 1em
   padding 0
   margin 0
 
+// Circle mixin with background color
+circle-pattern(bg, radius)
+  -webkit-border-radius radius
+  -moz-border-radius radius
+  border-radius radius
+  background-color bg
+
+/*
+ * Navigation bar
+ */
+#navbar
+  .circle
+    .blog
+      circle-pattern color2 50%
+    .launchpad
+      circle-pattern color3 50%
