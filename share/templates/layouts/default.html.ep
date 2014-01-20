@@ -10,6 +10,7 @@
   %= t 'body' => begin
     %= include 'nav'
     <%= content %>
+    %= include 'side'
     %= include 'footer'
   %= end
 %= end

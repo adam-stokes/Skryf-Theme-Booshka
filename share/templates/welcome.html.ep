@@ -7,6 +7,3 @@
 <p>This is <%= theme->{name} %> theme, you should create your own or customize this one.</p>
 
 <p>Admin page location is <strong>/admin</strong></p>
-
-
-

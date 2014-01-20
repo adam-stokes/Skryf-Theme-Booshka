@@ -11,9 +11,9 @@ $VERSION = version->parse($VERSION);
 
 sub register {
     my ($self, $app) = @_;
-    ###########################################################################
+    ############################################################################
     # Theme Metadata
-    ###########################################################################
+    ############################################################################
     $app->helper(
         theme => sub {
             my $self = shift;
@@ -28,9 +28,9 @@ sub register {
         }
     );
 
-    ###########################################################################
+    ############################################################################
     # Add templates/static files to the renderer/static paths namespaces
-    ###########################################################################
+    ############################################################################
     push @{$app->renderer->paths},
       catdir(dist_dir('Skryf-Theme-Booshka'), 'templates');
     push @{$app->static->paths},
@@ -57,6 +57,14 @@ Skryf::Theme::Booshka - Base theme for Skryf
 =head1 DESCRIPTION
 
 Skryf::Theme::Booshka is a base theme for Skryf
+
+=head1 HELPERS
+
+=head2 theme
+
+This should be overriden in each plugin and at minimum contain
+
+  name, author, license, description, plugins_supported, version
 
 =head1 AUTHOR
 
