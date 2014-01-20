@@ -6,7 +6,7 @@ use File::Spec::Functions 'catdir';
 use File::ShareDir ':ALL';
 use version;
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 $VERSION = version->parse($VERSION);
 
 sub register {

@@ -1,6 +1,8 @@
 Revision history for App-skryf-Theme-Booshka
 
 {{$NEXT}}
+
+0.06  2014-01-19 23:45:37 EST
 	- Add pre-run build
 	- Update colors
 
