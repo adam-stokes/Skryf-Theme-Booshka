@@ -1,5 +1,3 @@
-<div id="navbar">
-  <div class="links">
+%= t 'div', id => 'navbar' => begin
   %= link_to "Home" => "/"
-  </div>
-</div>
+%= end

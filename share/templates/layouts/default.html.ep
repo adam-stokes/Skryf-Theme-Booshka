@@ -4,16 +4,12 @@
     <meta name="viewport" content="width=device-width" />
     %= t 'title' => config->{title}
       %= stylesheet '/stylesheets/bundle.css'
-      %= stylesheet 'http://fonts.googleapis.com/css?family=Cabin+Sketch:700|Ubuntu'
+      %= stylesheet 'http://fonts.googleapis.com/css?family=Open+Sans:400,700,600|Gentium+Book+Basic:400,700'
       %= javascript '/javascripts/app-min.js'
   %= end
   %= t 'body' => begin
-    %= t 'div', id => 'container' => begin
-      %= include 'nav'
-        %= t 'div', id => 'page-body' => begin
-          <%= content %>
-        %= end
-    %= end
+    %= include 'nav'
+    <%= content %>
     %= include 'footer'
   %= end
 %= end

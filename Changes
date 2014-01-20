@@ -1,15 +1,11 @@
 Revision history for App-skryf-Theme-Booshka
 
 {{$NEXT}}
+	- Add pre-run build
+	- Update colors
 
 0.05  2014-01-18 19:00:35 EST
 	- Update admin style
-
-0.04  2014-01-14 20:49:41 EST
 	- Include version parsing
-
-0.03  2014-01-14 20:39:57 EST
 	- Update theme
-
-0.02  2014-01-09 17:28:30 EST
         - Fix distribution paths
