@@ -9,8 +9,10 @@
   %= end
   %= t 'body' => begin
     %= include 'nav'
-    <%= content %>
-    %= include 'side'
+    %= t 'div', id => 'content' => begin
+      <%= content %>
+      %= include 'side'
+    %= end
     %= include 'footer'
   %= end
 %= end
