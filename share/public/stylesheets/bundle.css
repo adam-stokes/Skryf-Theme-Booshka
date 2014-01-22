@@ -1,3 +1,4 @@
-body{color:#fff;background-color:#81a489;font-family:'Gentium Book Basic',sans-serif;font-size:1em}
+body{color:#fff;background-color:#2c3e50;font-family:'Gentium Book Basic',sans-serif;font-size:1em;padding:0;margin:0}
+#navbar{margin-top:10px;height:100px}
 h1{font-family:'Open Sans';font-weight:normal}
 #footer{font-size:.75em;font-family:'Open Sans';font-weight:normal}

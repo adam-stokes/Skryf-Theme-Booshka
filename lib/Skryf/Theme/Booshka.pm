@@ -1,13 +1,10 @@
 package Skryf::Theme::Booshka;
+# ABSTRACT: Base theme for Skryf
 
 use Mojo::Base 'Mojolicious::Plugin';
 use File::Basename 'dirname';
 use File::Spec::Functions 'catdir';
 use File::ShareDir ':ALL';
-use version;
-
-our $VERSION = '0.06';
-$VERSION = version->parse($VERSION);
 
 sub register {
     my ($self, $app) = @_;
@@ -23,7 +20,7 @@ sub register {
                 'license'           => 'Perl_5',
                 'description'       => 'The default Skryf theme.',
                 'plugins_supported' => ['Blog', 'Launchpad'],
-                'version'           => $VERSION,
+                'version'           => $Skryf::Theme::Booshka::VERSION
             };
         }
     );
@@ -44,12 +41,6 @@ sub register {
 1;
 __END__
 
-=encoding utf-8
-
-=head1 NAME
-
-Skryf::Theme::Booshka - Base theme for Skryf
-
 =head1 SYNOPSIS
 
   use Skryf::Theme::Booshka;
@@ -65,20 +56,5 @@ Skryf::Theme::Booshka is a base theme for Skryf
 This should be overriden in each plugin and at minimum contain
 
   name, author, license, description, plugins_supported, version
-
-=head1 AUTHOR
-
-Adam Stokes E<lt>adamjs@cpan.orgE<gt>
-
-=head1 COPYRIGHT
-
-Copyright 2013-2014 Adam Stokes
-
-=head1 LICENSE
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
-=head1 SEE ALSO
 
 =cut
