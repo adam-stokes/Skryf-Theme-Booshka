@@ -8,11 +8,16 @@
       %= javascript '/javascripts/app-min.js'
   %= end
   %= t 'body' => begin
-    %= include 'nav'
+    %= t 'div', id => 'header' => begin
+      %= t 'h1', class => 'title' => config->{title}
+      %= t 'h3', class => 'author' => begin
+        by <%= config->{author} %>
+      %= end
+    %= end
     %= t 'div', id => 'content' => begin
       <%= content %>
-      %= include 'side'
     %= end
+    %= include 'side'
     %= include 'footer'
   %= end
 %= end

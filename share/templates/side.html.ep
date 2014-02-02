@@ -1,0 +1,4 @@
+%= t 'div', id  => 'side' => begin
+  <h3>Nav</h3>
+  %= include 'nav'
+%= end

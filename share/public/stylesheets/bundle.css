@@ -1,6 +1,18 @@
-body{color:#fff;background-color:#2c3e50;font-family:'Gentium Book Basic',sans-serif;font-size:1em;padding:0;margin:0}
-#navbar{margin-top:2px;height:145px;background-color:#3498db;border-bottom:2px solid #2980b9;}
-#navbar .primary-nav{position:absolute;float:right;top:15px}
-#content{margin-left:10%;margin-right:10%}
+body{color:#fffce2;background-color:#122430;font-family:'Gentium Book Basic',sans-serif;padding:0;margin:0}
+@media screen and (max-width: 300px){body{font-size:.8999999999999999em}
+}@media screen and (min-width: 500px){body{font-size:1em}
+}@media screen and (min-width: 700px){body{font-size:1.0999999999999999em}
+}@media screen and (min-width: 1200px){body{font-size:1.2em}
+}#header{background-color:#273e45;height:175px;border-bottom:1px solid #446c78;border-top:2px solid #446c78;text-align:center;}
+#header .author{font-style:italic}
+#content{float:left;margin-left:10%;margin-top:2%}
+@media screen and (min-width: 960px){#content{width:960px}
+}@media screen and (min-width: 1280px){#content{width:1280px}
+}a{color:#ebd2b5;text-decoration:none}
 h1{font-family:'Open Sans';font-weight:normal}
-#footer{font-size:.75em;font-family:'Open Sans';font-weight:normal}
+#side{float:left;}
+@media screen and (max-width: 300px){#side{font-size:.7em}
+}@media screen and (min-width: 500px){#side{font-size:.8em}
+}@media screen and (min-width: 700px){#side{font-size:.9em}
+}@media screen and (min-width: 1200px){#side{font-size:1em}
+}#footer{clear:both;font-size:.75em;font-family:'Open Sans';font-weight:normal;margin-left:10%;margin-right:10%;text-align:center}
