@@ -1,12 +1,7 @@
-%= t 'div', id => 'navbar' => begin
-  %= t 'div', class => 'primary-nav' => begin
-   %= t 'ul' => begin
-    %= t 'li', class => 'primary-nav-item' => begin
-     %= link_to "Home" => "/"
-    %= end
-    %= t 'li', class => 'primary-nav-item' => begin
-     %= link_to "Blog" => url_for("blog_index")
-    %= end
-   %= end
-  %= end
-%= end
+<nav>
+  <ul>
+    <li><%= link_to "Home" => "/" %></li>
+    <li><%= link_to "Blog" => url_for("blog_index") %></li>
+  </ul>
+</nav>
+

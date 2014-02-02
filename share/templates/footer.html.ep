@@ -1,4 +1,4 @@
-%= t 'div', id => 'footer' => begin
+<footer>
   <%= link_to 'http://perl.org' => begin %><img src="/img/perl.png" height="15" width="80" alt="Perl Powered" /><% end %>
   &rarr;
   <%= link_to "https://github.com/skryf/Skryf" => begin %>Skryf<% end %> <%= app->config->{version} %> |
@@ -9,5 +9,4 @@
       <b>You are currently logged in.</b>
      % }
     %= end
-
-%= end
+</footer>

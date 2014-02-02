@@ -3,16 +3,25 @@ body{color:#fffce2;background-color:#122430;font-family:'Gentium Book Basic',san
 }@media screen and (min-width: 500px){body{font-size:1em}
 }@media screen and (min-width: 700px){body{font-size:1.0999999999999999em}
 }@media screen and (min-width: 1200px){body{font-size:1.2em}
-}#header{background-color:#273e45;height:175px;border-bottom:1px solid #446c78;border-top:2px solid #446c78;text-align:center;}
-#header .author{font-style:italic}
+}header{background-color:#273e45;height:175px;border-bottom:1px solid #446c78;border-top:2px solid #446c78;text-align:center;}
+header .author{font-style:italic}
 #content{float:left;margin-left:10%;margin-top:2%}
 @media screen and (min-width: 960px){#content{width:960px}
 }@media screen and (min-width: 1280px){#content{width:1280px}
 }a{color:#ebd2b5;text-decoration:none}
 h1{font-family:'Open Sans';font-weight:normal}
-#side{float:left;}
-@media screen and (max-width: 300px){#side{font-size:.7em}
-}@media screen and (min-width: 500px){#side{font-size:.8em}
-}@media screen and (min-width: 700px){#side{font-size:.9em}
-}@media screen and (min-width: 1200px){#side{font-size:1em}
-}#footer{clear:both;font-size:.75em;font-family:'Open Sans';font-weight:normal;margin-left:10%;margin-right:10%;text-align:center}
+nav{position:absolute;top:0;left:0;width:100%;background-color:#fffce2;font-family:'Open Sans';font-size:.8em;}
+nav a{color:#122430}
+@media screen and (max-width: 300px){nav{font-size:.7em}
+}@media screen and (min-width: 500px){nav{font-size:.8em}
+}@media screen and (min-width: 700px){nav{font-size:.9em}
+}@media screen and (min-width: 1200px){nav{font-size:1em}
+}nav ul{width:960px;margin-left:auto;margin-right:auto;padding:0;}
+nav ul li{display:inline-block;text-align:center}
+nav ul li.last{margin:0}
+aside{float:right;width:15%;margin-right:25px;margin-top:25px;background-color:#ebd2b5;color:#e63531}
+@media screen and (max-width: 300px){aside{font-size:.7em}
+}@media screen and (min-width: 500px){aside{font-size:.8em}
+}@media screen and (min-width: 700px){aside{font-size:.9em}
+}@media screen and (min-width: 1200px){aside{font-size:1em}
+}footer{clear:both;font-size:.75em;font-family:'Open Sans';font-weight:normal;margin-left:10%;margin-right:10%;text-align:center}
