@@ -43,7 +43,7 @@ __END__
 
 =head1 SYNOPSIS
 
-  use Skryf::Theme::Booshka;
+    use Skryf::Theme::Booshka;
 
 =head1 DESCRIPTION
 
@@ -55,6 +55,6 @@ Skryf::Theme::Booshka is a base theme for Skryf
 
 This should be overriden in each plugin and at minimum contain
 
-  name, author, license, description, plugins_supported, version
+    name, author, license, description, plugins_supported, version
 
 =cut

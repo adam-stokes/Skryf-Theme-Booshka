@@ -8,7 +8,7 @@ VERSION
 
 SYNOPSIS
 
-      use Skryf::Theme::Booshka;
+        use Skryf::Theme::Booshka;
 
 DESCRIPTION
 
@@ -20,7 +20,7 @@ HELPERS
 
     This should be overriden in each plugin and at minimum contain
 
-      name, author, license, description, plugins_supported, version
+        name, author, license, description, plugins_supported, version
 
 AUTHOR
 
