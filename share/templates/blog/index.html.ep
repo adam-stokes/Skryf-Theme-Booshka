@@ -1,24 +1,24 @@
 % use DateTime::Format::RFC3339;
 % layout 'default';
-%= t 'div', class => 'blog-list' => begin
-  %= tag 'ul' => begin
-    % foreach (@{$postlist}) {
-      %= tag 'li' => begin
-        % my $f = DateTime::Format::RFC3339->new;
-        % my $dt = $f->parse_datetime($_->{created});
-        <div class="date">
-          <div class="date-month"><%= $dt->strftime('%b') %></div>
-          <div class="date-day"><%= $dt->strftime('%d') %></div>
-        </div>
-        <div class="post-body">
-          <div class="post-link">
-            <a href="<%= url_for('blog_detail', { slug => $_->{slug} } ) %>">
-                <%= $_->{title} %>
-            </a>
-          </div>
-	  <%== $_->{html} %>
-        </div>
-      %= end
-    % }
-  %= end
-%= end
+
+<div class="page-header">
+<h1>The writing <small>on the wall</small></h1>
+</div>
+% foreach (@{$postlist}) {
+<div class="row">
+  % my $f = DateTime::Format::RFC3339->new;
+  % my $dt = $f->parse_datetime($_->{created});
+  <div class="date">
+    <div class="date-month"><%= $dt->strftime('%b') %></div>
+    <div class="date-day"><%= $dt->strftime('%d') %></div>
+  </div>
+  <div class="post-body">
+    <div class="post-link">
+      <a href="<%= url_for('blog_detail', { slug => $_->{slug} } ) %>">
+        <%= $_->{title} %>
+      </a>
+    </div>
+    <%== $_->{html} %>
+  </div>
+</div>
+% }

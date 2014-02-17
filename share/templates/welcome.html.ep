@@ -2,10 +2,13 @@
 
 %= include 'alerts'
 
-%= t 'h1' => "Welcome to your new Skryf application."
+<div class="page-header">
+ <h1>Welcome <small>to your new Skryf application.</small></h1>
+</div>
 
-<p>This is <%= theme->{name} %> theme, you should create your own or
+<p>This is the default <%= theme->{name} %> theme, you should create your own or
 customize this one.</p>
+<p>Browse through the <%= link_to "documentation" => "/docs/manual" %> to familiarize yourself with the platform along with developing themes and plugins.</p>
 
 <div class="page-header">
   <h4>Features</h4>

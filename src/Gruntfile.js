@@ -52,7 +52,7 @@ module.exports = function(grunt) {
         },
       concat: {
           css: {
-              src: ['bower_components/bootswatch/cosmo/bootstrap.min.css',
+              src: ['bower_components/bootswatch/spacelab/bootstrap.min.css',
                   '../build/css/style.css'
               ],
               dest: '../build/css/combined.css'

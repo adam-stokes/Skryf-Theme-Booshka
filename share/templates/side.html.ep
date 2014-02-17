@@ -4,4 +4,11 @@
     <a href="/docs/manual" class="list-group-item">Manual</a>
     <a href="https://github.com/skryf/Skryf" class="list-group-item">Github</a>
   </div>
+
+  <h4>Meta</h3>
+  <div class="list-group">
+    <%= link_to sprintf("%s v%s", "Skryf", app->config->{version}) => "https://github.com/skryf/Skryf", class => 'list-group-item' %>
+    <%= link_to sprintf("%s v%s", theme->{name}, theme->{version}) => "https://github.com/skryf/Skryf-Theme-Booshka", class => 'list-group-item' %>
+  </div>
+
 </div>

@@ -1,9 +1,3 @@
-<footer>
+<footer class="well well-sm">
   <%= link_to 'http://perl.org' => begin %><img src="/img/perl.png" height="15" width="80" alt="Perl Powered" /><% end %>
-  &rarr;
-  <%= link_to "https://github.com/skryf/Skryf" => begin %>Skryf<% end %> <%= app->config->{version} %> |
-  Theme: <%= link_to "https://github.com/skryf/Skryf-Theme-Booshka" => begin %><%= theme->{name} %><% end %> <%= theme->{version} %>
-
-    %= t 'div', id => 'account' => begin
-    %= end
 </footer>
