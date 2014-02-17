@@ -1,17 +1,30 @@
 % layout 'default';
 
-%= t 'div', class  => 'post-body' => begin
-  % if (my $msg = flash 'message') {
-  <b><%= $msg %></b>
-  % }
-  <h2>Secret hideout</h2>
-  %= form_for '/auth' => ( method => 'POST' ), class => 'blog-form' => begin
-      <label>Login</label>
-      %= text_field 'username', type => 'text'
-      <br />
-      <label>Password</label>
-      %= password_field 'password'
-      <br />
-      %= submit_button 'Login', class => 'btn'
-  % end
-%= end
+%= include 'alerts'
+<div class="page-header">
+  <h2>Login</h2>
+</div>
+
+%# Login form
+%= form_for '/auth' => ( method => 'POST' ), role => 'form', class => 'form-horizontal' => begin
+<div class="form-group">
+  <label for="username" class="col-sm-2 control-label">Login</label>
+  <div class="col-sm-10">
+    %= text_field 'username', type => 'text', class => 'form-control', id => 'username'
+  </div>
+</div>
+<div class="form-group">
+  <label for="password" class="col-sm-2 control-label">Password</label>
+  <div class="col-sm-10">
+    %= password_field 'password', class => 'form-control', id => 'password'
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    %= submit_button 'Login', class => 'btn btn-default'
+  </div>
+</div>
+
+%# End login form
+% end
+

@@ -1,7 +1,16 @@
-<nav>
-  <ul>
-    <li><%= link_to "Home" => "/" %></li>
-    <li><%= link_to "Blog" => url_for("blog_index") %></li>
-  </ul>
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><%= link_to "Home" => "/" %></li>
+      <li><%= link_to "Blog" => url_for("blog_index") %></li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+       % if (my $auth = session 'is_admin') {
+       <li><%= link_to "Logout" => url_for("logout") %></li>
+       % } else {
+       <li><%= link_to "Login" => url_for("login") %></li>
+       % }
+      </ul>
+  </div>
 </nav>
 

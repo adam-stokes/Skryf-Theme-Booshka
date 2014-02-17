@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-%= t 'html' => begin
-  %= t 'head' => begin
-    <meta name="viewport" content="width=device-width" />
+<html>
+  <head>
     %= t 'title' => config->{title}
-      %= stylesheet '/stylesheets/bundle.css'
-      %= stylesheet 'http://fonts.googleapis.com/css?family=Open+Sans:400,700,600|Gentium+Book+Basic:400,700'
-      %= javascript '/javascripts/app-min.js'
-  %= end
-  %= t 'body' => begin
-    %= include 'nav'
-    %= t 'div', id => 'content' => begin
-      <%= content %>
-    %= end
-    %= include 'side'
-    %= include 'footer'
-  %= end
-%= end
+    %= stylesheet '/stylesheets/bundle.css'
+    %= javascript '/javascripts/app.min.js'
+</head>
+<body>
+    <div class="container">
+      <header>
+	<h1><%= config->{title} %> <small>by <%= config->{author} %></small></h1>
+	%= include 'nav'
+      </header>
+      <div class="row">
+	<div class="col-md-8">
+	  <%= content %>
+	</div>
+	%= include 'side'
+      </div>
+      %= include 'footer'
+    </div>
+</body>
+</html>

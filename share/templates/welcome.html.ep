@@ -1,9 +1,11 @@
 % layout 'default';
+
+%= include 'alerts'
+
 %= t 'h1' => "Welcome to your new Skryf application."
-% if (my $msg = flash 'message') {
-  <b><%= $msg %></b>
-% }
 
-<p>This is <%= theme->{name} %> theme, you should create your own or customize this one.</p>
+<p>This is <%= theme->{name} %> theme, you should create your own or
+customize this one.</p>
 
-<p>Admin page location is <strong>/admin</strong></p>
+<p>You may <%= link_to "login" => url_for("login") %> to your admin
+portal, or browse the current site.</p>

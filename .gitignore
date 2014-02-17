@@ -1,6 +1,7 @@
 /Skryf-Theme-Booshka-*
 /.build
 /_build*
+build
 /Build
 MYMETA.*
 !META.json

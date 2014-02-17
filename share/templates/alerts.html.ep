@@ -1,0 +1,5 @@
+% if (my $msg = flash 'message') {
+<div class="alert alert-info">
+  <%= $msg %>
+</div>
+% }

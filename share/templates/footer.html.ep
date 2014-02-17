@@ -5,8 +5,5 @@
   Theme: <%= link_to "https://github.com/skryf/Skryf-Theme-Booshka" => begin %><%= theme->{name} %><% end %> <%= theme->{version} %>
 
     %= t 'div', id => 'account' => begin
-     % if (my $auth = session 'is_admin') {
-      <b>You are currently logged in.</b>
-     % }
     %= end
 </footer>
