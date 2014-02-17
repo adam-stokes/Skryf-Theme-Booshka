@@ -10,6 +10,7 @@
       <header>
 	<h1><%= config->{title} %> <small>by <%= config->{author} %></small></h1>
 	%= include 'nav'
+	%= include 'alerts'
       </header>
       <div class="row">
 	<div class="col-md-8">

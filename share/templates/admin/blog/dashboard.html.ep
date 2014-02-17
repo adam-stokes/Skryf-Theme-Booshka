@@ -1,11 +1,10 @@
-% layout 'admin';
-<div class="post-body">
-%= t 'h2' => 'Posts'
-%= link_to "New Post" => url_for('admin_blog_new') => class => 'btn'
-% if (my $msg = flash 'message') {
-  <h4><%= $msg %></h4>
-% }
-<table border="0">
+% layout 'default';
+
+<div class="page-header">
+<h1>Posts</h1>
+</div>
+
+<table class="table">
   <tbody>
   <tr>
     <th>Title</th>
@@ -25,4 +24,3 @@
   % }
   </tbody>
 </table>
-</div>

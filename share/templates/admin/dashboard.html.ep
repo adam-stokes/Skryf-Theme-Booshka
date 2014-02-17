@@ -1,4 +1,4 @@
-% layout 'admin';
+% layout 'default';
 
 %= t 'h1' => 'Welcome, '. $user->{username}
 
