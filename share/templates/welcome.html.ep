@@ -7,5 +7,18 @@
 <p>This is <%= theme->{name} %> theme, you should create your own or
 customize this one.</p>
 
-<p>You may <%= link_to "login" => url_for("login") %> to your admin
-portal, or browse the current site.</p>
+<div class="page-header">
+  <h4>Features</h4>
+</div>
+<ul>
+  <li>Separation of business and design</li>
+  <li>Everything is pluggable.</li>
+  <li>Variety of core plugins (blog, wiki, search, etc)</li>
+  <li>Baked in authentication</li>
+  <li>Baked in security measures</li>
+  <li>Full websocket support</li>
+  <li>Mongo backed</li>
+  <li>Baked in preforking web server</li>
+  <li>Fast and responsive</li>
+  <li>Tag helpers for forms and other content filtering/formatting</li>
+</ul>
