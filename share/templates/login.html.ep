@@ -5,7 +5,7 @@
 </div>
 
 %# Login form
-%= form_for '/auth' => ( method => 'POST' ), role => 'form', class => 'form-horizontal' => begin
+%= form_for '/authenticate' => ( method => 'POST' ), role => 'form', class => 'form-horizontal' => begin
 <div class="form-group">
   <label for="username" class="col-sm-2 control-label">Login</label>
   <div class="col-sm-10">

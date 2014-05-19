@@ -1,12 +1,3 @@
 % layout 'default';
 
-%= t 'h1' => 'Welcome, '. $user->{username}
-
-% if (my $social = $user->{social}) {
-  %= t 'h2' => 'Connected Networks'
-  % for my $s (keys $social) {
-   <div class="social-connect-<%= $s %>">
-     <%= $social->{$s} %>
-   </div>
-  % }
-% }
+%= t 'h1' => 'Welcome, '. session 'username'
