@@ -13,7 +13,7 @@ on 'test' => sub {
 
 on 'configure' => sub {
   requires "ExtUtils::MakeMaker" => "6.30";
-  requires "File::ShareDir::Install" => "0.03";
+  requires "File::ShareDir::Install" => "0.06";
 };
 
 on 'develop' => sub {

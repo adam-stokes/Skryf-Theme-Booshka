@@ -10,9 +10,9 @@ build_requires:
   strict: '0'
 configure_requires:
   ExtUtils::MakeMaker: '6.30'
-  File::ShareDir::Install: '0.03'
+  File::ShareDir::Install: '0.06'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.015, CPAN::Meta::Converter version 2.140640'
+generated_by: 'Dist::Zilla version 5.017, CPAN::Meta::Converter version 2.141170'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
