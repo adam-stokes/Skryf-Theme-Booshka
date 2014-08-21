@@ -12,11 +12,12 @@ on 'test' => sub {
 };
 
 on 'configure' => sub {
-  requires "ExtUtils::MakeMaker" => "6.30";
+  requires "ExtUtils::MakeMaker" => "0";
   requires "File::ShareDir::Install" => "0.06";
 };
 
 on 'develop' => sub {
   requires "Test::More" => "0";
   requires "Test::NoTabs" => "0";
+  requires "Test::Synopsis" => "0";
 };
