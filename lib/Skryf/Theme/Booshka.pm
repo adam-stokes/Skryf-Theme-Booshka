@@ -1,4 +1,5 @@
 package Skryf::Theme::Booshka;
+
 # ABSTRACT: Base theme for Skryf
 
 use Mojo::Base 'Mojolicious::Plugin';
